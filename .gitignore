@@ -1,0 +1,14 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Directories
+target/*
+.idea/*
+
+# Files
+atlassian-ide-plugin.xml
+
