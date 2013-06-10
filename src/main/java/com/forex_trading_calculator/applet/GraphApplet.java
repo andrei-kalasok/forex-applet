@@ -28,4 +28,8 @@ public class GraphApplet extends JApplet{
 		label.setBorder(BorderFactory.createMatteBorder(1,1,1,1, Color.black));
 		getContentPane().add(label, BorderLayout.CENTER);
 	}
+
+	public static void main(String ... args ){
+		System.out.println("Test main method");
+	}
 }
