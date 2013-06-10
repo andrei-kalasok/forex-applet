@@ -29,7 +29,35 @@ public class GraphApplet extends JApplet{
 		getContentPane().add(label, BorderLayout.CENTER);
 	}
 
-	public static void main(String ... args ){
-		System.out.println("Test main method");
+	public static void main(String[] args)
+	{
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());/*"com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"*/
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		} catch (UnsupportedLookAndFeelException e) {
+			e.printStackTrace();
+		}
+		// create the frame with a title
+		Frame frame = new Frame();
+		frame.setTitle("Test");
+		// exit the application when the JFrame is closed
+		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		// set the size of the frame (applet will be width by height in size)
+		int height = 300;
+		int width = 450;
+		// pack the frame to get correct insets
+		frame.pack();
+		Insets fI = frame.getInsets();
+		frame.setSize(width + fI.right + fI.left, height + fI.top + fI.bottom);
+		// center the frame on screen
+		Dimension sD = Toolkit.getDefaultToolkit().getScreenSize();
+		frame.setLocation((sD.width - width)/3, (sD.height - height)/3);
+		// make the frame visible
+		frame.setVisible(true);
 	}
 }
