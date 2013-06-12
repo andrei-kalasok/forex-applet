@@ -22,11 +22,9 @@ public class GraphApplet extends JApplet{
 	}
 
 	private void createGUI() {
-		JLabel label = new JLabel(
-				"You are successfully running a Swing applet!");
-		label.setHorizontalAlignment(JLabel.CENTER);
-		label.setBorder(BorderFactory.createMatteBorder(1,1,1,1, Color.black));
-		getContentPane().add(label, BorderLayout.CENTER);
+		Frame frame = new Frame();
+
+		getContentPane().add(frame.getContentPane(), BorderLayout.CENTER);
 	}
 
 	public static void main(String[] args)
