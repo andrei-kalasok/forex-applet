@@ -8,6 +8,12 @@
     <artifactId>ForexApplet</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <scm>
+        <connection>scm:git:git@github.com:andrei-kolosok/forex-applet.git</connection>
+        <developerConnection>scm:git:git@github.com:andrei-kolosok/forex-applet.git</developerConnection>
+        <url>https://github.com/andrei-kolosok/forex-applet.git</url>
+    </scm>
+
 	<build>
 		<plugins>
 			<plugin>
