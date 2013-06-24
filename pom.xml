@@ -4,7 +4,7 @@
 
     <groupId>ForexApplet</groupId>
     <artifactId>ForexApplet</artifactId>
-    <version>1.3</version>
+    <version>1.4-SNAPSHOT</version>
 
     <scm>
         <connection>scm:git:git@github.com:andrei-kolosok/forex-applet.git</connection>
